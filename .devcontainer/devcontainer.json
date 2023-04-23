@@ -19,12 +19,12 @@
       "eamodio.gitlens",
       "wayou.vscode-todo-highlight",
       "dbaeumer.vscode-eslint",
-      "streetsidesoftware.code-spell-checker"
+      "streetsidesoftware.code-spell-checker",
+      "nickdemayo.vscode-json-editor"
     ],
     "settings": {
       "terminal.integrated.defaultProfile.linux": "bash",
       "php.validate.executablePath": "/usr/local/bin/php"
     }
-  ]
   }
   
