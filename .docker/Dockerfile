@@ -3,6 +3,13 @@ FROM php:7.4.33-apache
 RUN apt-get update && apt-get install -y \
     sudo \
     git \
+    curl \
+    wget \
+    vim \
+    nano \
+    zip \
+    unzip \
+    openssl \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
