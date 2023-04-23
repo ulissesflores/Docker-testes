@@ -22,10 +22,15 @@ RUN apt-get update && apt-get install -y \
     pcntl \
     bcmath \
     gd \
-    && a2enmod rewrite \
+    && a2enmod rewrite
+
+# install Mysql
+RUN apt-get update && apt-get install -y \
+    && docker-php-ext-install \
+    pdo_mysql \
     && apt-get install -y \
-    mysql-client \
-    mysql-server \
+    default-mysql-client \
+    default-mysql-server \
     && apt-get clean
 
 # Set working directory
