@@ -1,0 +1,17 @@
+{
+    "name": "my_project",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www/html",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "felixfbecker.php-intellisense",
+        "bmewburn.vscode-intelephense-client",
+        "donjayamanne.githistory",
+        "dbaeumer.vscode-eslint",
+        "mysql-explorer.mysql"
+    ],
+    "shutdownAction": "stopCompose"
+}
