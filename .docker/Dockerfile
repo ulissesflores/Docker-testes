@@ -1,5 +1,7 @@
+# Use an official PHP runtime as a parent image
 FROM php:7.4.33-apache
 
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     sudo \
     git \
@@ -22,4 +24,18 @@ RUN apt-get update && apt-get install -y \
     gd \
     && a2enmod rewrite
 
-RUN usermod -a -G sudo www-data
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy the application files to the container
+COPY ./html/ .
+
+# Set permissions for Apache user
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 755 /var/www/html
+
+# Expose port 80 to the Docker host
+EXPOSE 80
+
+# Start the Apache web server in the foreground
+CMD ["apache2-foreground"]
