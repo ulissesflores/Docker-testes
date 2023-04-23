@@ -22,12 +22,7 @@ RUN apt-get update && apt-get install -y \
     pcntl \
     bcmath \
     gd \
-    && a2enmod rewrite
-
-# install Mysql
-RUN apt-get update && apt-get install -y \
-    && docker-php-ext-install \
-    pdo_mysql \
+    && a2enmod rewrite \
     && apt-get install -y \
     mysql-client \
     mysql-server \
@@ -48,4 +43,3 @@ EXPOSE 80
 
 # Start the Apache web server in the foreground
 CMD ["apache2-foreground"]
-
