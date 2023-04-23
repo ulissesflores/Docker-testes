@@ -24,6 +24,15 @@ RUN apt-get update && apt-get install -y \
     gd \
     && a2enmod rewrite
 
+# install Mysql
+RUN apt-get update && apt-get install -y \
+    ...
+    && docker-php-ext-install \
+    pdo_mysql \
+    ...
+    && apt-get install -y \
+    mysql-client
+
 # Set working directory
 WORKDIR /var/www/html
 
@@ -39,3 +48,4 @@ EXPOSE 80
 
 # Start the Apache web server in the foreground
 CMD ["apache2-foreground"]
+
