@@ -9,6 +9,23 @@
     "settings": {
       "terminal.integrated.defaultProfile.linux": "bash",
       "php.validate.executablePath": "/usr/local/bin/php"
-    }
+    },
+    "extensions": [
+      "felixfbecker.php-intellisense",
+      "ms-azuretools.vscode-docker",
+      "ms-azuretools.vscode-docker-compose",
+      "ms-mysql.mysql",
+      "ms-vscode-remote.remote-containers"
+      "editorconfig.editorconfig",
+      "vscode-icons-team.vscode-icons",
+      "aaron-bond.better-comments",
+      "oderwat.indent-rainbow",
+      "eamodio.gitlens",
+      "ms-vscode.cpptools",
+      "eamodio.gitlens",
+      "wayou.vscode-todo-highlight",
+      "dbaeumer.vscode-eslint",
+      "streetsidesoftware.code-spell-checker"
+  ]
   }
   
