@@ -7,6 +7,8 @@
   <title>My Project</title>
 </head>
 <body>
-  <h1>Welcome to My Project!</h1>
+  <h1>TESTANDO AMBIENTE!!!!</h1>
+  <?php phpinfo(); ?>
+
 </body>
 </html>
