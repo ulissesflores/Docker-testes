@@ -26,12 +26,12 @@ RUN apt-get update && apt-get install -y \
 
 # install Mysql
 RUN apt-get update && apt-get install -y \
-    ...
     && docker-php-ext-install \
     pdo_mysql \
-    ...
     && apt-get install -y \
-    mysql-client
+    mysql-client \
+    mysql-server \
+    && apt-get clean
 
 # Set working directory
 WORKDIR /var/www/html
