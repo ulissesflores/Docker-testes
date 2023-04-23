@@ -1,0 +1,14 @@
+{
+    "name": "PHP + MySQL",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "web",
+    "appPort": [80],
+    "extensions": [
+      "felixfbecker.php-pack"
+    ],
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+      "php.validate.executablePath": "/usr/local/bin/php"
+    }
+  }
+  

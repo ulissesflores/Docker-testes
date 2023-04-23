@@ -1,1 +1,1 @@
-# Docker-testes
+# Criando e configurando um ambiente de desenvolvimento com as melhores práticas para o codespace
